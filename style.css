@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/* nav bar */
+
+#navbar {
+  background: #f9f9f9;
+}
+#logo {
+  margin-bottom: 5px;
+}
+.navbar-toggler span {
+  color: rgb(0, 149, 255);
+}
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 550;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+  background-color: rgb(0, 149, 255);
+  color: white;
+}
+#navbar form button {
+  background-color: rgb(0, 149, 255);
+  color: #f9f9f9;
+  border: none;
+}
+
+.btn {
+  margin-right: 10px;
+}
+/* nav bar closes */
+
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: url(./Assets/Background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  vertical-align: top;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.home .content h5 {
+  color: white;
+  font-size: 38px;
+  font-weight: 500;
+  text-shadow: 00px 4px 4px rgb(142, 142, 142);
+  font-style: italic;
+}
+
+.home .content h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 0px 2px 2px black;
+}
+
+.home .content p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0px 2px 2px black;
+}
+
+.placeName {
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.changecontent {
+  content: " ";
+  color: #ffa500;
+  text-shadow: 0px 1px 1px black;
+  animation: changetext 10s infinite linear;
+}
+
+.home .content a {
+  padding: 10px;
+  background: white;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.home .content a:hover {
+  background: #ffa500;
+  color: white;
+}
+@media (max-width: 850px) {
+  .home {
+    background-position: 50%;
+  }
+  .home .content h1 {
+    font-size: 38px;
+  }
+  .home .content p {
+    font-size: 13px;
+  }
+}
+
+/* booking page */
+
+.book {
+  background: #f9f9f9;
+  padding: 50px;
+}
+.main-text h1 {
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+.book .card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6x black;
+}
+.book select {
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.book .row {
+  margin-top: 30px;
+}
+
+.book form input {
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+}
+.book .submit {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: #0088ff;
+  color: white;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+/* package */
+
+.main-txt h1 {
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+.packages .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0, 1) 0px 4px 12px;
+}
+
+.packages .card img {
+  border-radius: 5px;
+}
+.packages .card .card-body {
+  background: transparent;
+}
+.packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.packages .card .card-body p {
+  font-size: 15px;
+}
+.checked {
+  color: #fff200;
+}
+.star i {
+  font-size: 20px;
+}
+.packages .card .card-body h6 {
+  font-size: 20px;
+}
+.packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  background: #0088ff;
+  color: aliceblue;
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+}
+
+/* services */
+.services {
+  background: #f9f9f9;
+  margin-top: 50px;
+}
+
+.services .card {
+  box-shadow: 0px 5px 5px -6px black;
+  border: none;
+  cursor: pointer;
+}
+.services .card i {
+  font-size: 60px;
+  text-align: center;
+  color: chartreuse;
+  margin-top: 20px;
+}
+.services .card .card-body h3 {
+  font-weight: 600;
+}
+
+/* services ends */
+
+/* galley*/
+.gallary {
+  position: relative;
+  margin-top: 50px;
+}
+.gallary .card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0, 1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+}
+.gallary .card img {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.gallary .card img:hover {
+  transform: scale(1.1);
+}
+.card h4 {
+  font-size: 25px;
+  display: block;
+  color: #fff;
+  text-shadow: -2px 2px 2px #000;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* galley Ends*/
+
+/* agout Us*/
+
+.about {
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+.about .card {
+  border-radius: 10px;
+}
+.about .card img {
+  border-radius: 10px;
+}
+.about h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p {
+  font-weight: 500;
+}
+
+/*
+ agout end*/
+
+/*Foooter*/
+
+#footer {
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+  background: #f9f9f9;
+}
+#footer h1 {
+  font-weight: 600;
+  padding-top: 30px;
+  text-shadow: 0px 0px 1px black;
+}
+
+.social-links i {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s ease;
+}
+.social-links i:hover {
+  background: #0088ff;
+}
+/*Foooter*/
