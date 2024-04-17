@@ -9,12 +9,16 @@
 
 /* nav bar */
 
-#navbar {
-  background: #f9f9f9;
-}
 #logo {
   margin-bottom: 5px;
+  float: left;
 }
+
+#navbar {
+  background: #f9f9f9;
+  overflow: auto; /* Ensures proper layout with floated elements */
+}
+
 .navbar-toggler span {
   color: rgb(0, 149, 255);
 }
@@ -173,6 +177,16 @@
   color: white;
   margin-top: 10px;
   transition: 0.5s;
+}
+.book {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  min-height: 100vh; /* Ensure full height of viewport */
+}
+
+.book form {
+  text-align: center; /* Align form elements to the center */
 }
 
 /* package */
