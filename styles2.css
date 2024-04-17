@@ -82,3 +82,22 @@ label {
   margin-bottom: 5px;
   color: #333;
 }
+@media only screen and (max-width: 600px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  button {
+    width: calc(100% - 16px); /* Adjusted width */
+    padding: 6px; /* Adjusted padding */
+  }
+
+  input[type="date"] {
+    width: calc(100% - 16px); /* Adjusted width */
+    padding: 6px; /* Adjusted padding */
+  }
+
+  form {
+    width: 90%; /* Adjusted width */
+  }
+}
