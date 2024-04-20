@@ -18,11 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const userData = JSON.parse(storedUserData);
 
-    // Retrieve default username and password from JavaScript code
     const defaultUsername = "yash110820@gmail.com";
     const defaultPassword = "11223344";
 
-    // Check if the entered username and password match the registered user's data or the default credentials
     if (
       (userData.email === username && userData.password === password) ||
       (username === defaultUsername && password === defaultPassword)

@@ -41,4 +41,12 @@ form.addEventListener("submit", function (event) {
   }
   alert("Booking Successful!");
   form.reset();
+
+  const loggedInUser = localStorage.getItem("loggedInUser");
+  if (loggedInUser) {
+    const navBar = document.getElementById("navbar");
+    const userNameElement = document.createElement("span");
+    userNameElement.textContent = `Welcome, ${loggedInUser}`;
+    navBar.appendChild(userNameElement);
+  }
 });
